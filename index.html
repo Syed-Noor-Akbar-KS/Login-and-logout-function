@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://doctorshahs.com/wp-content/uploads/2023/04/cropped-Dr.-SHAHS-LOGO.png" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+    rel="stylesheet"
+  />
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="header">
+    <nav class="nav">
+        <p class="nav-item"><a href="#welcome"> About </a></p>
+        <p class="nav-item"><a href="#works"> Work</a></p>
+        <p class="nav-item"><a href="#contact"> Contact</a></p>
+        <p class="nav-item"><a href="loginform.html" onclick="logout();">Logout</a></p>
+    </nav>
+</div>
+
+    <div id="hero-section" id="welcome">
+        <h1>Hey I am Syed Noor Akbar</h1>
+        <p>Web Developer</p>
+    </div>
+
+    <div id="works">
+<h1>Some of My Projects</h1>
+<div id="work">
+        <div class="project"><a href="#"> 
+            <img src="https://i.pinimg.com/originals/c5/78/1d/c5781d72c1298dc869b74702b4ee42a0.png" alt="" > <p class="desc"> How to make TO-DO APP</p>
+        </a></div>
+
+        <div class="project"><a href="#"> 
+            <img src="https://www.freecodecamp.org/news/content/images/2020/08/1-9.png" alt="" > <p class="desc"> How to work with Fetched API  </p>
+        </a></div>
+        
+        <div class="project"><a href="#"> 
+            <img src="https://www.freecodecamp.org/news/content/images/2021/03/javascript-map-function.png" alt="" > <p class="desc">How to use Map Function</p>
+        </a></div>
+        
+        <div class="project"><a href="#"> 
+            <img src="https://images.prismic.io/northcoders/53f397b8-e8f7-4690-afee-9bfd3687a2fe_arraymethods3.png?auto=compress%2Cformat&rect=0%2C0%2C600%2C340&w=800&fit=max&q=60" alt="" > <p class="desc">How to use Filter Function</p>
+        </a></div>
+        
+        <div class="project"><a href="#"> 
+            <img src="https://i.ytimg.com/vi/8SkHWeDoTf0/maxresdefault.jpg" alt="" > <p class="desc">How to use Find Function</p>
+        </a></div>
+        
+        <div class="project"><a href="#"> 
+            <img src="https://webtechparadise.com/sites/default/files/2020-05/slice-method-cover-1200x630.jpg" alt="" > <p class="desc">How to use Slice Function</p>
+        </a></div>
+    
+        
+    </div>
+   <input type="button" value="Show More" class="button">
+</div>
+<div id="contact"></div>
+    <div class="footer" >
+<div class="descr">
+<h1>Let's work together...</h1>
+<p>How do you take your coffee?</p>
+</div>
+<div class="social">
+        <a href="https://facebook.com/syednoorakbar1"> <i class="fab fa-facebook-square"></i>Facebook </a>
+        <a href="https://github.com/Syed-Noor-Akbar-KS"> <i class="fab fa-github"></i> GitHub</a>
+        <a href="#"> <i class="fab fa-twitter"></i> Twitter</a>
+        <a href="mailto:syednoorakbar007@gmail.com"><i class="fas fa-at"></i>Send a mai</a>
+        <a href="tel:03357580056"><i class="fas fa-mobile-alt"></i> Call me</a>
+    </div>
+
+<div class="line"></div>
+<div class="copyright">
+    <div class="detail">**This is just a portfolio. All the projects and contact details given are not real.</div>
+    <div class="copy-right"><p>
+        &copy; Created By Syed Noor Akbar
+      </p></div>
+</div>
+
+    </div>
+    <script>
+      let object = JSON.parse(localStorage.getItem("response"));
+      console.log(object)
+        const logout = ()=>{
+            object.status = "logout";
+            localStorage.setItem("response",JSON.stringify(object));
+            window.location.href = "loginform.html";
+        }
+
+    </script>
+
+</body>
+</html>
