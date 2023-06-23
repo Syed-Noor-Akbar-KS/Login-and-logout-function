@@ -99,6 +99,18 @@
             window.location.href = "loginform.html";
         }
 
+
+        (()=>{
+    try{    
+    if(object.status == "logout" ){
+            window.location.href = "loginform.html";
+        }
+        }
+        catch(e){
+            console.error()
+        }
+})();
+
     </script>
 
 </body>
