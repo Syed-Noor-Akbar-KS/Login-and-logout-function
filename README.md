@@ -11,5 +11,5 @@ Step 7: For that you have to make a IIFE / Self invoking Function to check wheth
 Step 8: If its ture redirect towards Home page.
 Step 9: If its false stay on Login Page and should not direct towards Home page.
 Step 10: Just create Logout function which just change the value of flag from true to false.
-
+<br/>
 Follows these steps is the simple demonstration how a Login and Logout works.
